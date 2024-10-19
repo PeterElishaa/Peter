@@ -1,0 +1,44 @@
+.admin-dashboard {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .btn {
+    margin-right: 10px;
+  }
+  
+  .project-list {
+    margin-top: 20px;
+  }
+  
+  .project-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .project-list li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  

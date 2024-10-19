@@ -1,0 +1,47 @@
+<!-- admin-dashboard.component.html -->
+<div class="admin-dashboard">
+  <h2>Admin Dashboard</h2>
+
+  <!-- Add New Project Form -->
+  <form (ngSubmit)="editingProject ? updateProject() : addProject()" class="form">
+    <div class="form-group">
+      <label for="name">Project Name</label>
+      <input
+        type="text"
+        id="name"
+        [(ngModel)]="editingProject ? editingProject.name : newProject.name"
+        name="name"
+        placeholder="Project Name"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="description">Project Description</label>
+      <textarea
+        id="description"
+        [(ngModel)]="editingProject ? editingProject.description : newProject.description"
+        name="description"
+        placeholder="Project Description"
+        required
+      ></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+      {{ editingProject ? 'Update Project' : 'Add Project' }}
+    </button>
+    <button type="button" class="btn btn-secondary" (click)="resetForm()">Cancel</button>
+  </form>
+
+  <!-- List of Projects -->
+  <div class="project-list">
+    <h3>Existing Projects</h3>
+    <ul>
+      <li *ngFor="let project of projects">
+        <span>{{ project.name }} - {{ project.description }}</span>
+        <button (click)="editProject(project)" class="btn btn-secondary">Edit</button>
+        <button (click)="deleteProject(project._id!)" class="btn btn-danger">Delete</button>
+      </li>
+    </ul>
+  </div>
+</div>

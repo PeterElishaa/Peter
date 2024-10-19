@@ -1,0 +1,31 @@
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 50px;
+    background-color: #f8f9fa;
+  }
+  
+  .about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-content {
+    max-width: 600px;
+  }
+  
+  .about-content h2 {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .about-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #6c757d;
+  }
+  
